@@ -28,6 +28,7 @@ public class LineBot1Application {
     @EventMapping
     public void handleDefaultMessageEvent(Event event) {
         System.out.println("event: " + event);
+
     }
 }
 
