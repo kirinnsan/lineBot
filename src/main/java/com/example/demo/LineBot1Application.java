@@ -21,8 +21,10 @@ public class LineBot1Application {
     @EventMapping
     public Message handleTextMessageEvent(MessageEvent<TextMessageContent> event) {
         System.out.println("event: " + event);
+/*        //オウム返し
         final String originalMessageText = event.getMessage().getText();
-        return new TextMessage(originalMessageText);
+        return new TextMessage(originalMessageText);*/
+        return  new TextMessage("https://torikizokuapp.herokuapp.com/");
     }
 
     @EventMapping
